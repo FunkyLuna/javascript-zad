@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    font-family: "Comic Sans MS";
+    background-color: darkslategrey;
+    padding: 15px;
+}
+header {
+    background-color: blue;
+    text-align: center;
+}
+section {
+    padding: 10px;
+}
+footer {
+    background-color: blue;
+    color: goldenrod;
+    text-align: center;
+    padding: 15px;
+}

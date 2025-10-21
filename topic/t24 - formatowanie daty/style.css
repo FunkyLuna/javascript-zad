@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: darkolivegreen;
+    padding: 15px;
+}
+header {
+    background-color: darkgreen;
+    text-align: center;
+}
+section {
+    padding: 10px;
+    text-size-adjust: 200%;
+    font-size: 50px
+}
+
+.wynik {
+    height: 600px;
+}
+
+footer {
+    background-color: darkgreen;
+    color: goldenrod;
+    text-align: center;
+    padding: 15px;
+}

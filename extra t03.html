@@ -1,0 +1,65 @@
+<!doctype html>
+<section class="card">
+  <h2>4. Przyklady (zapis C#)</h2>
+  <p class="meta">Fragmenty przykładowego kodu ilustrujące abstrakcję i dziedziczenie.</p>
+  <pre><code>// Abstrakcja
+abstract class Wielokat
+{
+protected int[] boki;
+
+
+public int IleBokow()
+{
+return boki.Length;
+}
+
+
+public int Obwod()
+{
+int obwod = 0;
+foreach (int bok in boki)
+{
+obwod += bok;
+}
+return obwod;
+}
+
+
+public abstract int Pole();
+}
+
+
+// Dziedziczenie
+class Kwadrat : Wielokat
+{
+public Kwadrat(int a)
+{
+boki = new int[4];
+boki[0] = boki[1] = boki[2] = boki[3] = a;
+}
+
+
+public override int Pole()
+{
+return boki[0] * boki[0];
+}
+}
+</code></pre>
+</section>
+
+
+<section class="card">
+  <h2>5. Różnice — w skrócie</h2>
+  <ul>
+    <li>Strukturalne: program zbudowany z funkcji/podprogramów — sekwencyjny przepływ sterowania.</li>
+    <li>Obiektowe: funkcje (metody) powiązane z obiektami — utrudnia przypadkowe przekazanie niewłaściwych zmiennych, lepsza modularność stanu.</li>
+  </ul>
+</section>
+
+
+<footer>
+  <p class="meta">Notatka stworzona na podstawie przesłanego pliku źródłowego.</p>
+</footer>
+</div>
+</body>
+</html>

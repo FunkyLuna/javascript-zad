@@ -1,0 +1,26 @@
+<!--3.90-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sprawdź_formularz</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div>
+    <form enctype="text/plain" action=" " method="post"
+          onsubmit="return sprawdz(this);">
+        <p id="ak1">Dane osobowe:</p>
+        <b>Nazwisko:</b>
+        <input class="pole" name="nazw" value="" size="40"><br>
+        <b>Imię:</b>
+        <input class="pole" name="imie" value="" size="40"><br>
+        <b>Zawód:</b>
+        <input class="pole" name="zawod" value="" size="40"><br><br>
+        <label> Pracuję: <input type="checkbox" name="opcje" maxlength="1">
+        </label><br><br>
+        <input type="submit" value="Wyślij"></form>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>meh</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+    <h1> Porównanie programowania obiektowego i strukturalnego. </h1>
+    <h2>Autor: Tomasz Borowiak</h2>
+    <hr>
+  </header>
+<div>
+<h2>Porównanie programowania obiektowego i strukturalnego.</h2>
+</div>
+<hr>
+<h1>Programowanie strukturalne:</h1>
+
+<ul>
+  <li>Paradygmat programowania zakładający rozdzielenie
+    funkcjonalności programu na moduły (podprogramy).
+    Komunikują się one ze sobą przez określone interfejsy.
+    </li>
+  <li>Jest rozszerzeniem programowania proceduralnego
+    (poprawa przejrzystości i jakości kodu oraz
+    przyśpieszenie tworzenia oprogramowania).</li>
+</ul>
+<h1>Założenia programowania strukturalnego</h1>
+
+<ol>
+  <li>Podzielone bloki kodu mają jeden punkt wejścia (mogą
+    mieć wiele punktów wyjścia)</li>
+  <li>Wykonywanie wyrażeń w określonej kolejności</li>
+  <li>Używanie instrukcji warunkowych (if , if else)</li>
+  <li>Używanie pętli (for, while, do while)</li>
+  <li>Unikanie instrukcji skoku (goto)</li>
+  <li>Unikanie instrukcji break, continue</li>
+</ol>
+<hr>
+
+<h1>Programowanie obiektowe:</h1>
+
+   <p>- Paradygmat programowania zakładający reprezentację
+  problemów w postaci obiektów, przypisanie im działań
+  (metod), które mogą wykonywać oraz umieszczenie pól,
+  które opisują dany obiekt.</p>
+   <p>- Jest to podejście bardziej naturalne dla ludzi, bardziej
+  zgodne z rzeczywistością.</p>
+<hr>
+
+<h1>Założenia programowania obiektowego:</h1>
+
+<dl>
+  <dt>Abstrakcja</dt>
+  <dd>- Zredukowanie właściwości opisywanego obiektu do
+    najbardziej podstawowych, ograniczenie zakresu
+    funkcjonalności obiektu do kluczowych dla danego
+    zagadnienia działań</dd>
+  <dd>- Ukrycie funkcjonalności za interfejsem, uogólnienie
+    implementacji.</dd>
+  <dt>Hermetyzacja danych (enkapsulacja)</dt>
+  <dd>- Dostęp do składowych jest ograniczony za pomocą
+    dobrze określonego interfejsu, czyli obiekt udostępnia
+    tylko pewien zbiór metod, które są widoczne z zewnątrz i
+    mogą być wywoływane</dd>
+  <dd>- Dostęp do pól obiektu powinien być realizowany poprzez
+    odpowiednie metody(Settery/gettery) a nie przez
+    bezpośredni dostęp do nich.</dd>
+  <dt>Dziedziczenie</dt>
+  <dd>- Mechanizm umożliwiający wywodzenie nowych klas z klas
+    już istniejących, wraz z przejmowaniem ich metod. Dzięki
+    czemu zyskujemy wszystkie już istniejące funkcjonalności,
+    które dodatkowo możemy rozszerzyć lub zmienić.</dd>
+  <dt>Polimorfizm</dt>
+  <dd>- Mechanizm pozwalający na używanie metod itp. na różny
+    sposób, np. przeciążając metodę toString, aby akceptowała
+    zmienne typu int, float, decimal i każdą z nich
+    konwertowała właściwie do ciągu znakowego.</dd>
+</dl>
+<hr>
+
+<h1>Różnice:</h1>
+<ul>
+<p>W programowaniu strukturalnym mamy podprogramy
+  (funkcje), które odpowiednio ułożone i wywołane tworzą
+  program.</p>
+  <p>Natomiast w p. obiektowym funkcjonalności są
+    przypisane obiektom, zatem trudniej tutaj o pomyłkę np.
+    taką jak przekazanie złej zmiennej do funkcji.</p>
+</ul>
+
+</body>
+</html>

@@ -1,0 +1,12 @@
+Oczywiście, wyjaśnię jak działa sterta (heap) i stos (stack) w kontekście języka JavaScript. Oto krótkie wyjaśnienie z przykładami:
+Stos (Stack):
+
+Przechowuje zmienne proste (typy prymitywne) i referencje do obiektów
+Ma ograniczoną wielkość
+Działa na zasadzie LIFO (Last In, First Out)
+
+Sterta (Heap):
+
+Przechowuje obiekty i funkcje
+Ma większą pojemność niż stos
+Nie ma określonej struktury zarządzania pamięcią

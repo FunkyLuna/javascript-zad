@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rebeccapurple;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    color: goldenrod;
+    border: black solid 5px;
+}
+hr {
+}
+
+p {
+    font-size: 35px;
+    color: dimgrey;
+}
+
+h1 {
+    font-size: 25px;
+}
+
+h2 {
+    font-size: 18px;
+}
+
+body {
+    background-color: darkolivegreen;
+}

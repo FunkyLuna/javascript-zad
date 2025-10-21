@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400">
+  <!-- Tło -->
+  <rect width="600" height="400" fill="#f0f0f0"/>
+  
+  <!-- Stos -->
+  <rect x="50" y="50" width="200" height="300" fill="#a0d0ff" stroke="#000000" stroke-width="2"/>
+  <text x="150" y="30" font-family="Arial" font-size="16" text-anchor="middle">Stos (Stack)</text>
+  
+  <!-- Sterta -->
+  <rect x="350" y="50" width="200" height="300" fill="#ffd0a0" stroke="#000000" stroke-width="2"/>
+  <text x="450" y="30" font-family="Arial" font-size="16" text-anchor="middle">Sterta (Heap)</text>
+  
+  <!-- Elementy na stosie -->
+  <rect x="60" y="60" width="180" height="30" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="80" font-family="Arial" font-size="14">a: 5</text>
+  
+  <rect x="60" y="100" width="180" height="30" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="120" font-family="Arial" font-size="14">b: "Hello"</text>
+  
+  <rect x="60" y="140" width="180" height="30" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="160" font-family="Arial" font-size="14">obj: ref</text>
+  
+  <rect x="60" y="180" width="180" height="30" fill="#ffffff" stroke="#000000"/>
+  <text x="70" y="200" font-family="Arial" font-size="14">example: ref</text>
+  
+  <!-- Ramka stosu dla funkcji example -->
+  <rect x="60" y="220" width="180" height="60" fill="#e6e6e6" stroke="#000000" stroke-dasharray="5,5"/>
+  <text x="70" y="240" font-family="Arial" font-size="14" fill="#666">c: 15</text>
+  <text x="70" y="260" font-family="Arial" font-size="14" fill="#666">arr: ref</text>
+  
+  <!-- Elementy na stercie -->
+  <rect x="360" y="60" width="180" height="60" fill="#ffffff" stroke="#000000"/>
+  <text x="370" y="80" font-family="Arial" font-size="14">Obiekt obj</text>
+  <text x="370" y="100" font-family="Arial" font-size="14">x: 10, y: 20</text>
+  
+  <rect x="360" y="130" width="180" height="60" fill="#ffffff" stroke="#000000"/>
+  <text x="370" y="150" font-family="Arial" font-size="14">Funkcja example</text>
+  <text x="370" y="170" font-family="Arial" font-size="14">// kod funkcji</text>
+  
+  <rect x="360" y="200" width="180" height="60" fill="#ffffff" stroke="#000000"/>
+  <text x="370" y="220" font-family="Arial" font-size="14">Tablica arr</text>
+  <text x="370" y="240" font-family="Arial" font-size="14">[1, 2, 3]</text>
+  
+  <!-- Strzałki -->
+  <line x1="240" y1="155" x2="350" y2="90" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="240" y1="195" x2="350" y2="160" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="240" y1="265" x2="350" y2="230" stroke="#000000" stroke-width="2" marker-end="url(#arrowhead)" stroke-dasharray="5,5"/>
+  
+  <!-- Definicja strzałki -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="0" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" />
+    </marker>
+  </defs>
+</svg>

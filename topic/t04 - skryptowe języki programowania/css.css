@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+
+header {
+    padding: 10px;
+    background-color: slategrey;
+    text-align: center;
+    text-size-adjust: 250%;
+}
+
+.sk {
+    width: 70%;
+}
+body {
+    background-color: lightslategrey;
+}
