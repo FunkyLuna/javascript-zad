@@ -1,0 +1,18 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: darkolivegreen;
+    padding: 15px;
+}
+header {
+    background-color: darkgreen;
+    text-align: center;
+}
+
+footer {
+    background-color: darkgreen;
+    color: goldenrod;
+    text-align: center;
+    padding: 15px;
+}
