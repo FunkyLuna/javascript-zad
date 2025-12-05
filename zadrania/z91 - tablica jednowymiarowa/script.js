@@ -1,0 +1,1 @@
+const liczba_a

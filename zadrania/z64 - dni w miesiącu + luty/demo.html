@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>DEMOn</title>
+</head>
+<body>
+<script>
+  let a = parseInt(prompt("podaj numer miesiąca"))
+  let b = parseInt(prompt("podaj numer roku"))
+
+  if (a === 2 && b % 4 === 1 || b % 400 === 1) {
+    document.write("28 dni");
+  }
+  else if (a === 2 && b % 4 === 0 || b % 400 === 0) {
+    document.write("29 dni");
+  }
+  else if (a === 4 || a === 6 || a === 9 || a === 11) {
+    document.write("30 dni");
+  }
+  else if (a > 0 && a < 13 && a % 2 === 1 && a !== 9 && a !== 9) {
+    document.write("31 dni")
+  }
+  else {
+    document.write("czy tak trudno przeczytać?")
+  }
+
+</script>
+<footer>
+  <h2>zespół szkół poltechncznych w głogowe &copy; 2025</h2>
+</footer>
+
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>tiddy</title>
+</head>
+<body>
+<header>
+    <h1>Zadanie t28</h1>
+    <h2>Autor: Tomasz Borowiak</h2>
+    <hr>
+</header>
+<script>
+    let a = parseInt(prompt("podaj liczbę A"))
+    let b = 1
+
+    for (;a > 0;) {
+        document.write("<h1> kwadrat liczby " + b + " to " + b * b +"</h1><br>")
+        b++;
+        if (b > a) break;
+    }
+    if (isNaN(a) || a <= 0) {
+        document.write("<h1> podaj poprawną liczbę</h1>")
+    }
+
+
+</script>
+<footer>
+    <h2>zespół szkół poltechncznych w głogowe &copy; 2025</h2>
+</footer>
+
+
+</body>
+</html>

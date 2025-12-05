@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tiddy</title>
+</head>
+<body>
+<script>
+let input = prompt("Podaj liczby oddzielone przecinkami (np. 3,7,2,9,5):");
+
+  let numbers = input.split(",").map(Number);
+
+  if (numbers.some(isNaN)) {
+    document.write("Wprowadzono niepoprawne dane! Upewnij się, że podajesz tylko liczby.");
+  } else {
+
+    let sorted = [...numbers].sort((a, b) => a - b);
+
+    let evens = numbers.filter(num => num % 2 === 0);
+
+    let sum = numbers.reduce((acc, val) => acc + val, 0);
+
+    document.write("Tablica liczb: " + numbers.join(", ") + "<br>");
+    document.write("Posortowana tablica: " + sorted.join(", ") + "<br>");
+    document.write("Liczby parzyste: " + (evens.length ? evens.join(", ") : "brak") + "<br>");
+    document.write("Suma wszystkich elementów: " + sum + "<br>");
+}
+
+</script>
+<footer>
+  <h2>zespół szkół poltechncznych w głogowe &copy; 2025</h2>
+</footer>
+
+
+</body>
+</html>

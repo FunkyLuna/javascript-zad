@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>pot</title>
+</head>
+<body>
+<script>
+  function pot(x,y) {
+    let wynik = 1
+    for (let i = 0; i < y; i++){
+      wynik = wynik * x
+    }
+    document.write(`x = ${x} <br> y = ${y} <br> ${x} <sup>${y}</sup> wynosi ${wynik}`)
+    return wynik
+  }
+  pot(2,3)
+
+</script>
+
+</body>
+</html>

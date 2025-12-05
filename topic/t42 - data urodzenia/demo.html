@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  let input = prompt("Podaj datę urodzenia (RRRR-MM-DD):");
+
+  if (!input) {
+    document.write("Nie podano daty!");
+  } else {
+    let birth = new Date(input);
+
+    let re = /^\d{4}-\d{2}-\d{2}$/;
+    if (!re.test(input)) {
+      document.write("Niepoprawny format daty! Użyj RRRR-MM-DD.");
+    } else {
+      if (isNaN(birth.getTime())) {
+        document.write("Niepoprawny format daty!");
+      } else {
+        let today = new Date();
+
+        if (birth > today) {
+          document.write("Data urodzenia nie może być z przyszłości!");
+        } else {
+
+          let age = today.getFullYear() - birth.getFullYear();
+          let thisYearsBirthday = new Date(today.getFullYear(), birth.getMonth(), birth.getDate());
+
+          if (today < thisYearsBirthday) {
+            age--;
+          }
+
+          let nextBirthday = thisYearsBirthday;
+          if (today > thisYearsBirthday) {
+            nextBirthday = new Date(today.getFullYear() + 1, birth.getMonth(), birth.getDate());
+          }
+
+          let msInDay = 1000 * 60 * 60 * 24;
+          let daysLeft = Math.ceil((nextBirthday - today) / msInDay);
+
+          let dni = ["niedzielę", "poniedziałek", "wtorek", "środę", "czwartek", "piątek", "sobotę"];
+          let dzienTygodnia = dni[birth.getDay()];
+
+          document.write("Twoja data urodzenia: " + input + "<br>");
+          document.write("Urodziłeś się w " + dzienTygodnia + "<br>");
+          document.write("Masz " + age + " lat<br>");
+          document.write("Do Twoich najbliższych urodzin pozostało: " + daysLeft + " dni<br>");
+        }
+      }
+    }
+  }
+
+</script>
+
+</body>
+</html>
