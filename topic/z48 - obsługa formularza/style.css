@@ -1,0 +1,23 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: dimgray;
+    padding: 15px;
+}
+header {
+    background-color: grey;
+    text-align: center;
+}
+section {
+    padding: 10px;
+    text-size-adjust: 200%;
+    background-color: lightsteelblue;
+}
+
+footer {
+    background-color: darkgreen;
+    color: goldenrod;
+    text-align: center;
+    padding: 15px;
+}
